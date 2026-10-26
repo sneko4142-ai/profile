@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+</head>
+<body>
+    <h1>なが</h1>
+    <p>岐阜県に住んでいる1年生です。休日は、映画鑑賞、ゲームをしています。</p>
+
+    <h2>好きなもの</h2>
+    <ul>
+        <li>映画</li>
+        <li>ゲーム</li>
+        <li>音楽</li>
+    </ul>
+
+    <h2>2026年見たベスト3</h2>
+    <ol>
+        <li>オデュッセイア</li>
+        <li>でっちあげ</li>
+        <li>告白</li>
+    </ol>    
+    <img src="screenshot HTML.png" alt="仮"width="400">    
+
+    <h2>おすすめの映画</h2>
+    <p><a href="https://kokuhou-movie.com/" target="_blank">Google検索</a></p>
+
+    <!-- 表の要件：h2の見出し、thの見出しセルを含む表 -->
+    <h2>お気に入りの作品一覧</h2>
+    <table border="1">
+        <tr>
+            <th>ジャンル</th>
+            <th>タイトル</th>
+        </tr>
+        <tr>
+            <td>映画</td>
+            <td>オデュッセイア</td>
+        </tr>
+        <tr>
+            <td>ゲーム</td>
+            <td>アクションゲーム</td>
+        </tr>
+    </table>
+
+    <!-- フォームの要件：h2の見出し、テキスト入力、ラジオ、textarea、ボタン -->
+    <h2>お問い合わせ・感想</h2>
+    <form action="#" method="post">
+        <!-- labelのforとinputのidを結びつける要件 -->
+        <label for="user-name">お名前：</label>
+        <input type="text" id="user-name" name="name"><br>
+
+        <label>好きなジャンル：</label>
+        <input type="radio" id="genre-movie" name="genre" value="movie">
+        <label for="genre-movie">映画</label>
+        <input type="radio" id="genre-game" name="genre" value="game">
+        <label for="genre-game">ゲーム</label><br>
+
+        <label for="user-message">メッセージ：</label><br>
+        <textarea id="user-message" name="message" rows="4" cols="30"></textarea><br>
+
+        <button type="submit">送信する</button>
+    </form>
+</body>
+</html>
