@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>なが</h1>
+<header>
+    <h1>ながの自己紹介</h1>
+    <nav>
+        <a href="#favorite">好きなもの</a>
+        <a href="#schedule">1週間の予定</a>
+        <a href="#form">感想を送る</a> 
+    </nav>
+</header>
+<main>
     <p>岐阜県に住んでいる1年生です。休日は、映画鑑賞、ゲームをしています。</p>
-
-    <h2>好きなもの</h2>
+</main>
+    <h2 id="favorite">好きなもの</h2>
     <ul>
         <li class="favorite">映画</li>
         <li>ゲーム</li>
         <li>音楽</li>
     </ul>
-
     <h2>2026年見たベスト3</h2>
     <ol>
         <li>オデュッセイア</li>
         <li>でっちあげ</li>
         <li>告白</li>
     </ol>    
+    
     <img src="screenshot HTML.png" alt="仮"width="400">    
 
     <h2>おすすめの映画</h2>
     <p><a href="https://kokuhou-movie.com/" target="_blank">Google検索</a></p>
 
-    <!-- 表の要件：h2の見出し、thの見出しセルを含む表 -->
     <h2>お気に入りの作品一覧</h2>
     <table>
         <tr>
@@ -45,10 +52,34 @@
         </tr>
     </table>
 
-    <!-- フォームの要件：h2の見出し、テキスト入力、ラジオ、textarea、ボタン -->
+    <h2 id="schedule">１週間の予定</h2>
+    <table>
+        <tr>
+            <th>月曜日</th>
+            <td>プログラミング</td>
+        <tr>
+                <th>火曜日</th>
+                <td>オンライン</td>
+            </tr>
+            <tr>
+                <th>水曜日</th>
+                <td>バイト</td>
+            </tr> 
+        </tr>
+            <tr>
+                <th>木曜日</th>
+                <td>ハードウェア</td>
+            </tr>
+        </tr>
+            <tr>
+                <th>金曜日</th>
+                <td>情報数学</td>
+            </tr>                        
+    </table>
+    <p></p>
+
     <h2>お問い合わせ・感想</h2>
     <form action="#" method="post">
-        <!-- labelのforとinputのidを結びつける要件 -->
         <label for="user-name">お名前：</label>
         <input type="text" id="user-name" name="name"><br>
 
@@ -63,5 +94,6 @@
 
         <button type="submit">送信する</button>
     </form>
+    <footer>© 2026 なが</footer>
 </body>
 </html>
