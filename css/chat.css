@@ -1,0 +1,110 @@
+/* ページ全体の余白リセットと背景設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #dbeafe;
+}
+
+/* チャット画面全体の枠 */
+.chat-container {
+  max-width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eff6ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 上部ヘッダー */
+.chat-header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* 真ん中のメッセージ一覧エリア */
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 1つひとつのメッセージ行（左右寄せの制御） */
+.message {
+  display: flex;
+}
+
+.message.received {
+  justify-content: flex-start;
+}
+
+.message.sent {
+  justify-content: flex-end;
+}
+
+/* 吹き出しの共通デザイン */
+.bubble {
+  padding: 10px 15px;
+  border-radius: 16px;
+  max-width: 70%;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* 相手の吹き出し（左側） */
+.message.received .bubble {
+  background-color: #ffffff;
+  color: #1e293b;
+  border-top-left-radius: 4px;
+}
+
+/* 自分の吹き出し（右側） */
+.message.sent .bubble {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-top-right-radius: 4px;
+}
+
+/* 下部の入力エリア */
+.chat-input-area {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #bfdbfe;
+  gap: 10px;
+}
+
+/* テキスト入力欄 */
+.chat-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #93c5fd;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 送信ボタン */
+.send-button {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #1d4ed8;
+}
