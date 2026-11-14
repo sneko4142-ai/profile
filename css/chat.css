@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #dbeafe;
+  background-color: #e8f5e9;
 }
 
 /* チャット画面全体の枠 */
@@ -13,13 +13,13 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #eff6ff;
+  background-color: #f1f8f5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 上部ヘッダー */
 .chat-header {
-  background-color: #1e3a8a;
+  background-color: #1b5e20;
   color: #ffffff;
   padding: 15px 20px;
 }
@@ -64,13 +64,13 @@ body {
 /* 相手の吹き出し（左側） */
 .message.received .bubble {
   background-color: #ffffff;
-  color: #1e293b;
+  color: #1f2937;
   border-top-left-radius: 4px;
 }
 
 /* 自分の吹き出し（右側） */
 .message.sent .bubble {
-  background-color: #2563eb;
+  background-color: #2e7d32;
   color: #ffffff;
   border-top-right-radius: 4px;
 }
@@ -80,7 +80,7 @@ body {
   display: flex;
   padding: 10px 15px;
   background-color: #ffffff;
-  border-top: 1px solid #bfdbfe;
+  border-top: 1px solid #c8e6c9;
   gap: 10px;
 }
 
@@ -88,7 +88,7 @@ body {
 .chat-input {
   flex: 1;
   padding: 10px 15px;
-  border: 1px solid #93c5fd;
+  border: 1px solid #a5d6a7;
   border-radius: 20px;
   font-size: 14px;
   outline: none;
@@ -97,7 +97,7 @@ body {
 /* 送信ボタン */
 .send-button {
   padding: 10px 20px;
-  background-color: #2563eb;
+  background-color: #2e7d32;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -106,5 +106,5 @@ body {
 }
 
 .send-button:hover {
-  background-color: #1d4ed8;
+  background-color: #1b5e20;
 }
